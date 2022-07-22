@@ -44,7 +44,6 @@ You will also have to download the "pifm" package by "omattos" which is describe
 
 For better transmission range you can connect/solder a wire to Pin 8 (GPIO4) on the Pi.
 If you happen to have a broken radio lying around, you could salvage the antenna and mount it onto your Pi like I did with my Zero W.
-My script makes this process easier and offers the convenience of controlling the transmission via GPIO pins. The heavy lifting is done by the pifm script though!
 
 > Note: ffmpeg is needed for transmission of .mp3 files because pifm only supports .wav files by default.
 
