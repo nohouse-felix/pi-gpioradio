@@ -115,3 +115,5 @@ Grab a wire or something else suitable to connect the pins and give it a test.
 Be sure to terminate the transmission before you switch from music to microphone transmission or the other way around!
 Make sure to tune your receiving device to the correct frequency.
 If you didn't change it, it's 99.8
+
+***Please note: Transmitting signals over the FM band without federal permission or authorization is very likely to be illegal, depending on which country you're in. Use at your own risk.***
