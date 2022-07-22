@@ -90,6 +90,8 @@ You can also alter the directory in which the script looks for .mp3 files.
 
 7. Connect a wire or an antenna to Pin 8 (GPIO4) on your Raspberry Pi for better transmission range.
 
+![gpio4](https://user-images.githubusercontent.com/31896499/180576894-cb6ee38c-1eae-4406-b828-cf4ba0daa9e1.png)
+
 8. Populate the "pi-gpioradio" folder with .mp3 files
 
 Make sure to copy your songs and recordings over to the "pi-gpioradio" folder.
