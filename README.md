@@ -9,6 +9,11 @@ The script checks for input on three different GPIO pins and executes the accord
 The command is issued inside a screen session so that the transmission can be stopped conveniently.
 If you connect the so called "terminatior" pin to ground, the screen session will be killed and the transmission will stop.
 The pin assignment and the overall procedure is of course customizable.
+It supports:
+
+- Transmission of audio files (in this case .mp3s)
+- Transmission of microphone input (USB microphone)
+- Control via GPIO pins
 
 
 
