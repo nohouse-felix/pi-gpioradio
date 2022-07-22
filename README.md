@@ -85,6 +85,7 @@ nano script.py
 Be sure to modify the directory paths in the script if you use a different user account!
 
 Simply change the numbers of the GPIO pins to different ones if you wish to use different pins.
+If you want to you can set a different FM frequency. The default one is 99.8.
 You can also alter the directory in which the script looks for .mp3 files.
 
 7. Connect a wire or an antenna to Pin 8 (GPIO4) on your Raspberry Pi for better transmission range.
