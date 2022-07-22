@@ -110,6 +110,7 @@ python /home/pi/pi-gpioradio/script.py
 10. Reboot
 
 11. Done!
+
 Grab a wire or something else suitable to connect the pins and give it a test.
 Be sure to terminate the transmission before you switch from music to microphone transmission or the other way around!
 Make sure to tune your receiving device to the correct frequency.
