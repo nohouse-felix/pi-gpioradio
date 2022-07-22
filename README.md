@@ -33,23 +33,27 @@ GPIO.26 - Terminator (Stop transmission)
 ## Prerequisites/Dependencies
 
 In order for this script to work you'll want to have Python, ffmpeg, screen & git installed on your system.
-Python is included in Raspberry Pi OS so you'll only have to install the ffmpeg and screen packages.
-Do so by typing:
-"sudo apt update" & "sudo apt install ffmpeg screen git" in a terminal.
-Confirm with "y" if asked for confirmation.
-You will also have to download the "pifm" package by "omattos" which is described in the Instructions section.
+Python is included in Raspberry Pi OS so you'll only have to install the ffmpeg, screen & git packages.
+Do so by issuing the following command in a terminal on your Pi:
+```
+sudo apt update && sudo apt install ffmpeg screen git
+```
+Confirm by typing "y" and pressing enter if asked for confirmation.
+
+You will also have to download the "pifm" package by "omattos" which is described in the Instructions section down below.
+
 For better transmission range you can connect/solder a wire to Pin 8 (GPIO4) on the Pi.
 If you happen to have a broken radio lying around, you could salvage the antenna and mount it onto your Pi like I did with my Zero W.
 My script makes this process easier and offers the convenience of controlling the transmission via GPIO pins. The heavy lifting is done by the pifm script though!
 
-> Note: ffmpeg is needed for transmission of .mp3 files because pifm only supports the transmission of .wav files by default
+> Note: ffmpeg is needed for transmission of .mp3 files because pifm only supports .wav files by default.
 
 
 ## Instructions
 
 1. Clone this repository
 ```
-git clone https://github.com/nohouse-felix/pi-gpioradio
+git clone https://github.com/nohouse-felix/pi-gpioradio.git
 ```
 
 2. Change directory to the "pi-gpioradio" folder
@@ -89,7 +93,7 @@ You can also alter the directory in which the script looks for .mp3 files.
 8. Populate the "pi-gpioradio" folder with .mp3 files
 
 Make sure to copy your songs and recordings over to the "pi-gpioradio" folder.
-You can also specify a different path in the script and use that for storing your music if you like.
+You can also specify a different path in the script and use that for storing your music.
 
 9. Make the "pi-gpioradio" script execute at boot
 ```
@@ -101,9 +105,10 @@ python /home/pi/pi-gpioradio/script.py
 ```
 *Note:* Be sure to change this if you don't use the default "pi" user!
 
-10. Reboot!
+10. Reboot
 
 11. Done!
-Grab a wire or something else to connect the pins and test things out.
+Grab a wire or something else suitable to connect the pins and give it a test.
+Be sure to terminate the transmission before you switch from music to microphone transmission or the other way around!
 Make sure to tune your receiving device to the correct frequency.
 If you didn't change it, it's 99.8
