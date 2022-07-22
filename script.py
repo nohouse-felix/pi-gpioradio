@@ -28,7 +28,7 @@ while True:
 			os.system("screen -S radio -X stuff 'cd /home/pi/pi-gpioradio^M'")
 			time.sleep(1)
             
-            ## triggers the transmission of the .mp3 files inside the pi-radio folder
+            ## triggers the transmission of the .mp3 files inside the pi-gpioradio folder
             ## REMINDER: the frequency which is defined here can be changed to your liking (~80-100)
 			os.system("screen -S radio -X stuff 'ffmpeg -i *.mp3 -f s16le -ar 22.05k -ac 1 - | sudo ./pifm - 99.8^M'")
 			time.sleep(5)
@@ -42,6 +42,7 @@ while True:
     
     elif mic_but.is_pressed:
 		time.sleep(1)
+		
 		if mic_but.is_pressed:
 			os.system("screen -dmS radio")
 			time.sleep(1)
@@ -52,12 +53,13 @@ while True:
 
 
 
-    ## If this button is pressed, all ongoing screen sessions and therefore transmissions will be killed/stopped.
-    ## This only applies for one session named according to the definition here.
+    ## If this button is pressed, the ongoing screen sessions and therefore transmission will be killed/stopped.
+    ## This only applies for a single session named according to the definition here.
     ## If you didn't change the name of the screen session, don't worry!
     
 	elif term_but.is_pressed:
 		time.sleep(1)
+		
 		if term_but.is_pressed:
         
                # Sends a "kill" command to the "radio" screen session
