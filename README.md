@@ -64,6 +64,7 @@ $ cd pi-gpioradio
 ```
 wget https://omattos.com/pifm.tar.gz
 ```
+Shoutout to [Oliver Mattos](https://www.omattos.com/) & [Oskar Weigl](https://github.com/madcowswe) for the PiFM script/software!
 
 4. Extract the package
 ```
