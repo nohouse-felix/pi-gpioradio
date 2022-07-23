@@ -100,9 +100,9 @@ You can also specify a different path in the script and use that for storing you
 
 9. Make the "pi-gpioradio" script execute at boot
 ```
-sudo nano /etc/rclocal
+sudo nano /etc/rc.local
 ```
-One line above the "exit 0" string, insert the following:
+One line above the one that says "exit 0", insert the following:
 ```
 python /home/pi/pi-gpioradio/script.py
 ```
